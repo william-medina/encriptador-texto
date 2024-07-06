@@ -124,7 +124,7 @@ function enableMicrophone() {
 
         // Evento al finalizar el reconocimiento
         recognition.onend = function() {
-            microButton.style.backgroundImage = "url('/assets/micro-off.svg')";
+            microButton.style.backgroundImage = "url('./assets/micro-off.svg')";
             microText.textContent = 'Activar micrófono';
             isMicroEnabled = false;
         };
@@ -132,7 +132,7 @@ function enableMicrophone() {
         // Evento al iniciar el reconocimiento
         recognition.onstart = function() {
             lastText = inputText.value; // Guardar texto actual
-            microButton.style.backgroundImage = "url('/assets/micro-on.svg')";
+            microButton.style.backgroundImage = "url('./assets/micro-on.svg')";
             microText.textContent = 'Escuchando...';
             isMicroEnabled = true;
         };
