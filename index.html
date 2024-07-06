@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" id="favicon" href="/assets/faviconDark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="header__logo" src="/assets/logo.svg" alt="Logo Alura">
+        <div class="dark-mode-toggle">
+            <p class="dark-mode-toggle__text">Modo Oscuro</p>
+            <button onclick="toggleDarkMode();" class="dark-mode-toggle__button">
+                <img id="dark-mode-icon" src="assets/toggle-off.svg" alt="Icono Modo Oscuro">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="text-input">
+            <div class="text-input__microphone">
+                <button onclick="enableMicrophone();" class="microphone__button"></button>
+                <p class="microphone__text">Activar micrófono</p>
+            </div>
+            <textarea id="input-textarea" class="text-input__textarea" placeholder="Ingrese el texto aquí o active el micrófono para comenzar a hablar"></textarea>
+            <div class="text-input__actions">
+                <div class="actions__info">
+                    <img src="assets/circle-exclamation.svg" alt="Signo de Exclamación">
+                    Solo letras minúsculas y sin acentos
+                </div>
+                <div class="actions__buttons">
+                    <button onclick="encryptText();" class="encrypt-button">Encriptar</button>
+                    <button onclick="decryptText();" class="decrypt-button">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="result">
+            <div class="result__message">
+                <img class="result__message__img" src="assets/figure.svg" alt="Figura">
+                <p class="result__message__text">
+                    <span>Ningún mensaje fue encontrado</span>
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+            <div class="result__output hidden">
+                <p id="output-text" class="result__text"></p>
+                <button onclick="copyText();" class="copy-button">Copiar</button>
+                <span class="result__copy-message">- Texto copiado al portapapeles -</span>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
