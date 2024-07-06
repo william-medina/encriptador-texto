@@ -79,8 +79,8 @@ function toggleDarkMode() {
 
 // Función para actualizar la interfaz de usuario del modo oscuro
 function updateDarkModeUI(isDarkMode) {
-    darkModeIcon.src = isDarkMode ? '/assets/toggle-on.svg' : '/assets/toggle-off.svg'; // Actualizar icono de modo oscuro
-    figureImg.src = isDarkMode ? '/assets/figure-dark.svg' : '/assets/figure.svg'; // Actualizar imagen del resultado
+    darkModeIcon.src = isDarkMode ? './assets/toggle-on.svg' : './assets/toggle-off.svg'; // Actualizar icono de modo oscuro
+    figureImg.src = isDarkMode ? './assets/figure-dark.svg' : './assets/figure.svg'; // Actualizar imagen del resultado
     darkModeText.textContent = isDarkMode ? 'Modo Claro' : 'Modo Oscuro'; // Actualizar texto del modo oscuro
 }
 
@@ -89,7 +89,7 @@ function getUserDarkModePreference() {
     const preferDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches; // Verificar preferencia del sistema
     document.body.classList.toggle('dark-mode', preferDarkMode); // Aplicar clase de modo oscuro al body según preferencia
     updateDarkModeUI(preferDarkMode); // Actualizar interfaz de usuario del modo oscuro
-    favicon.href = preferDarkMode ? '/assets/faviconDark.svg' : '/assets/favicon.svg'; // Actualizar favicon según modo oscuro
+    favicon.href = preferDarkMode ? './assets/faviconDark.svg' : './assets/favicon.svg'; // Actualizar favicon según modo oscuro
 }
 
 getUserDarkModePreference(); // Obtener y aplicar preferencia de modo oscuro al cargar la página
