@@ -27,7 +27,7 @@ function encryptText() {
         text = text.replaceAll(keysArray[i], valuesArray[i]); // Reemplazar llaves por valores en el texto
     }
     outputText.textContent = text; // Mostrar texto encriptado en la salida
-    document.querySelector('.result').scrollIntoView({ behavior: 'smooth' });
+    outputText.scrollIntoView({ behavior: 'smooth' }); // Hacer scroll suave hacia el elemento de salida
     checkInputText(); // Verificar y Actualizar visualización de resultados
 }
 
@@ -38,7 +38,7 @@ function decryptText() {
         text = text.replaceAll(valuesArray[i], keysArray[i]); // Reemplazar valores por llaves en el texto
     }
     outputText.textContent = text; // Mostrar texto desencriptado en la salida
-    outputText.scrollIntoView({ behavior: 'smooth' });
+    outputText.scrollIntoView({ behavior: 'smooth' }); // Hacer scroll suave hacia el elemento de salida
     checkInputText(); // Verificar y Actualizar visualización de resultados
 }
 
