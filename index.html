@@ -13,7 +13,7 @@
         <img class="header__logo" src="./assets/logo.svg" alt="Logo Alura">
         <div class="dark-mode-toggle">
             <p class="dark-mode-toggle__text">Modo Oscuro</p>
-            <button onclick="toggleDarkMode();" class="dark-mode-toggle__button">
+            <button type="button" onclick="toggleDarkMode();" class="dark-mode-toggle__button">
                 <img id="dark-mode-icon" src="./assets/toggle-off.svg" alt="Icono Modo Oscuro">
             </button>
         </div>
@@ -21,7 +21,7 @@
     <main>
         <section class="text-input">
             <div class="text-input__microphone">
-                <button onclick="enableMicrophone();" class="microphone__button"></button>
+                <button type="button" onclick="enableMicrophone();" class="microphone__button"></button>
                 <p class="microphone__text">Activar micrófono</p>
             </div>
             <textarea id="input-textarea" class="text-input__textarea" placeholder="Ingrese el texto aquí o active el micrófono para comenzar a hablar"></textarea>
@@ -31,8 +31,8 @@
                     Solo letras minúsculas y sin acentos
                 </div>
                 <div class="actions__buttons">
-                    <button onclick="encryptText();" class="encrypt-button">Encriptar</button>
-                    <button onclick="decryptText();" class="decrypt-button">Desencriptar</button>
+                    <button type="button" onclick="encryptText();" class="encrypt-button">Encriptar</button>
+                    <button type="button" onclick="decryptText();" class="decrypt-button">Desencriptar</button>
                 </div>
             </div>
         </section>
@@ -46,7 +46,7 @@
             </div>
             <div class="result__output hidden">
                 <p id="output-text" class="result__text"></p>
-                <button onclick="copyText();" class="copy-button">Copiar</button>
+                <button type="button" onclick="copyText();" class="copy-button">Copiar</button>
                 <span class="result__copy-message">- Texto copiado al portapapeles -</span>
             </div>
         </section>

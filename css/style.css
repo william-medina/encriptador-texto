@@ -209,7 +209,7 @@ footer {
 }
 
 .result img {
-    width: 336px;
+    width: 330px;
     height: 304px;
 }
 
@@ -234,6 +234,7 @@ footer {
     color: #495057;
     flex-direction: column;
     justify-content: space-between;
+    width: 336px;
 }
 
 
@@ -243,7 +244,7 @@ footer {
     overflow-y: auto;
     overflow-wrap: break-word;
     margin-bottom: 40px;
-    height: 80%;
+    height: 65vh;
 }
 
 .result__copy-message {
@@ -354,6 +355,7 @@ footer {
 
     .result__output {
         max-width: none;
+        width: auto;
     }
 
     .result__text {
