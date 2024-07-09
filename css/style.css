@@ -152,11 +152,10 @@ footer {
 }
 
 .actions__info {
-    width: 229px;
     font-size: 1.2rem;
     margin: 15px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     color: var(--gray-color);
 }
 
